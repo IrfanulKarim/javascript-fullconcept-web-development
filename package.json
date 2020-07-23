@@ -1,0 +1,14 @@
+{
+  "name": "jspracice",
+  "version": "1.0.0",
+  "description": "practice of js ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Irfanul Karim",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
