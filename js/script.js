@@ -163,29 +163,29 @@
 // 
 // 
 
-// Creating Object using new object
+// Creating Object using new object syntax
 
-var company=new Object();
-company.name="karim";
-company.address="Chittagong";
+// var company=new Object();
+// company.name="karim";
+// company.address="Chittagong";
 
-console.log(company);
+// console.log(company);
 
-company.employee=new Object();
-company.employee.name="irfan";
-console.log("Employee name is "+company.employee.name);
+// company.employee=new Object();
+// company.employee.name="irfan";
+// console.log("Employee name is "+company.employee.name);
 
-company.$employeesalary=11000;
-console.log("Salary is "+company.$employeesalary);
+// company.$employeesalary=11000;
+// console.log("Salary is "+company.$employeesalary);
 
-company["employeage"]=30;
-console.log("Age is "+company["employeage"]);
+// company["employeage"]=30;
+// console.log("Age is "+company["employeage"]);
 
-console.log("Company name is "+company["name"]);
+// console.log("Company name is "+company["name"]);
 
-var number="employeNumber";
-company["number"] = 35;
-console.log("Employee Number is "+company["number"]);
+// var number="employeNumber";
+// company["number"] = 35;
+// console.log("Employee Number is "+company["number"]);
 
 // 
 // 
@@ -194,3 +194,28 @@ console.log("Employee Number is "+company["number"]);
 // 
 // 
 // 
+
+// Better way: create object using object literal
+
+// var facebook= {
+//     name: "irfanul karim",
+//     age: 25,
+//     friends:{
+//         firstF:"manjir",
+//         secondF:"tanu"
+//     },
+//     year: 2011
+
+// };
+// console.log(facebook);
+// console.log(facebook.friends.secondF);
+
+
+// 
+// 
+// 
+// End 
+// 
+// 
+// 
+
