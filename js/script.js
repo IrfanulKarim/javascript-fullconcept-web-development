@@ -87,3 +87,11 @@ function q()
     }
 }
 console.log(q());
+
+// handling default values
+function order(dish){
+    dish= dish || "fuska";
+    console.log("food is "+dish);
+}
+order("sinagar");
+order();
