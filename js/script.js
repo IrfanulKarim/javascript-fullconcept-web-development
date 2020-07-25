@@ -219,3 +219,27 @@
 // 
 // 
 
+
+// function factory
+
+function makemultiplier(multiplier){
+    var myfunc=function(x){
+        return multiplier*x;
+    };
+    return myfunc;
+}
+
+var multiplyby3=makemultiplier(3);
+console.log(multiplyby3(5));
+
+
+
+
+// passing function by arguments
+
+function DoOperation(x, operation){
+    return operation(x);
+}
+
+var result=DoOperation(10,multiplyby3);
+console.log(result);
