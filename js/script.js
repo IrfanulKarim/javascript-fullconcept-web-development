@@ -222,24 +222,94 @@
 
 // function factory
 
-function makemultiplier(multiplier){
-    var myfunc=function(x){
-        return multiplier*x;
-    };
-    return myfunc;
+// function makemultiplier(multiplier){
+//     var myfunc=function(x){
+//         return multiplier*x;
+//     };
+//     return myfunc;
+// }
+
+// var multiplyby3=makemultiplier(3);
+// console.log(multiplyby3(5));
+
+// // passing function by arguments
+
+// function DoOperation(x, operation){
+//     return operation(x);
+// }
+
+// var result=DoOperation(10,multiplyby3);
+// console.log(result);
+
+
+// 
+// 
+// 
+// End 
+// 
+// 
+// 
+
+
+// pass by value vs pass by reference 
+
+var a=4;
+var b;
+b=a;
+console.log(a);
+console.log(b);
+
+console.log("after update");
+
+b=10;
+console.log(a);
+console.log(b);
+
+
+
+var a={x:7};
+var b;
+b=a;
+
+console.log(a.x);
+console.log(b.x);
+
+console.log("after update");
+
+b.x=200;
+
+console.log(a.x);
+console.log(b.x);
+
+
+
+// pass by value
+
+function passByValue(value){
+    console.log("Before passbyvalue a is "+value);
+
+    value=5;
+    console.log("aftre change value is "+value);
+
 }
 
-var multiplyby3=makemultiplier(3);
-console.log(multiplyby3(5));
+var a=10;
+passByValue(a);
+console.log("But after passbyvalue a is "+a);
 
 
+// pass by reference
 
+function passByrefence(object){
+    console.log("value is "+object.x);
 
-// passing function by arguments
+    object.x=5;
+    console.log("after change object value is");
+    console.log(object);
 
-function DoOperation(x, operation){
-    return operation(x);
 }
 
-var result=DoOperation(10,multiplyby3);
-console.log(result);
+var b={x:10};
+passByrefence(b);
+console.log("after passbtrefernce b object value is ");
+console.log(b);
