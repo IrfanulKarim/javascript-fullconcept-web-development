@@ -324,26 +324,54 @@
 
 // function Constructor
 
-function test(){
-    console.log(this);
-    this.myname="irfan";
-}
-test();
-console.log(window.myname);
+// function test(){
+//     console.log(this);
+//     this.myname="irfan";
+// }
+// test();
+// console.log(window.myname);
 
-function Circle(radius) {
-    this.radius=radius;
-    console.log(this.radius);
-}
+// function Circle(radius) {
+//     this.radius=radius;
+//     console.log(this.radius);
+// }
 
-Circle.prototype.getArea=
-    function(){
+// Circle.prototype.getArea=
+//     function(){
+//         return this.radius*2;
+//     };
+
+// var myCircle = new Circle(10);
+// console.log(myCircle);
+
+// var othercircle = new Circle(20);
+// console.log(othercircle);
+
+// 
+// 
+// 
+// End 
+// 
+// 
+// 
+
+// Objective Literal and this keyword
+
+var literalCircle =  { //new object
+    radius: 10,
+
+    getArea: function () {
+        console.log(this);
+        var self = this;
+        var increaseradius = function () {
+          self.radius = 20;  
+        };
+        increaseradius();
+
+        console.log("change radius value "+this.radius);
         return this.radius*2;
-    };
+    }
 
-var myCircle = new Circle(10);
-console.log(myCircle);
+};
 
-var othercircle = new Circle(20);
-console.log(othercircle);
-
+console.log(literalCircle.getArea());
