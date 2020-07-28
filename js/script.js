@@ -253,63 +253,97 @@
 
 // pass by value vs pass by reference 
 
-var a=4;
-var b;
-b=a;
-console.log(a);
-console.log(b);
+// var a=4;
+// var b;
+// b=a;
+// console.log(a);
+// console.log(b);
 
-console.log("after update");
+// console.log("after update");
 
-b=10;
-console.log(a);
-console.log(b);
-
-
-
-var a={x:7};
-var b;
-b=a;
-
-console.log(a.x);
-console.log(b.x);
-
-console.log("after update");
-
-b.x=200;
-
-console.log(a.x);
-console.log(b.x);
+// b=10;
+// console.log(a);
+// console.log(b);
 
 
 
-// pass by value
+// var a={x:7};
+// var b;
+// b=a;
 
-function passByValue(value){
-    console.log("Before passbyvalue a is "+value);
+// console.log(a.x);
+// console.log(b.x);
 
-    value=5;
-    console.log("aftre change value is "+value);
+// console.log("after update");
 
+// b.x=200;
+
+// console.log(a.x);
+// console.log(b.x);
+
+
+
+// // pass by value
+
+// function passByValue(value){
+//     console.log("Before passbyvalue a is "+value);
+
+//     value=5;
+//     console.log("aftre change value is "+value);
+
+// }
+
+// var a=10;
+// passByValue(a);
+// console.log("But after passbyvalue a is "+a);
+
+
+// // pass by reference
+
+// function passByrefence(object){
+//     console.log("value is "+object.x);
+
+//     object.x=5;
+//     console.log("after change object value is");
+//     console.log(object);
+
+// }
+
+// var b={x:10};
+// passByrefence(b);
+// console.log("after passbtrefernce b object value is ");
+// console.log(b);
+
+// 
+// 
+// 
+// End 
+// 
+// 
+// 
+
+// function Constructor
+
+function test(){
+    console.log(this);
+    this.myname="irfan";
+}
+test();
+console.log(window.myname);
+
+function Circle(radius) {
+    this.radius=radius;
+    console.log(this.radius);
 }
 
-var a=10;
-passByValue(a);
-console.log("But after passbyvalue a is "+a);
+Circle.prototype.getArea=
+    function(){
+        return this.radius*2;
+    };
 
+var myCircle = new Circle(10);
+console.log(myCircle);
 
-// pass by reference
+var othercircle = new Circle(20);
+console.log(othercircle);
 
-function passByrefence(object){
-    console.log("value is "+object.x);
-
-    object.x=5;
-    console.log("after change object value is");
-    console.log(object);
-
-}
-
-var b={x:10};
-passByrefence(b);
-console.log("after passbtrefernce b object value is ");
-console.log(b);
