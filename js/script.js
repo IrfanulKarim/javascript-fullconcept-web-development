@@ -386,40 +386,40 @@
 
 // arrays part 1
 
-var array = new Array();
-array[0] = "irfan";
-array[1] = 26;
-array[2] = function (name){
-    console.log(name);
-};
-array[3] = {course: "HTML CSS JS"};
+// var array = new Array();
+// array[0] = "irfan";
+// array[1] = 26;
+// array[2] = function (name){
+//     console.log(name);
+// };
+// array[3] = {course: "HTML CSS JS"};
 
-console.log(array[0]);
-console.log(array[1]);
-array[2]("karim");
-array[2](array[0]);
-console.log(array[3].course);
+// console.log(array[0]);
+// console.log(array[1]);
+// array[2]("karim");
+// array[2](array[0]);
+// console.log(array[3].course);
 
-// Short Hand array creation
+// // Short Hand array creation
 
-var names = ["Muhammad","Irfanul","Karim"];
-console.log(names);
+// var names = ["Muhammad","Irfanul","Karim"];
+// console.log(names);
 
-for (var i=0; i<names.length; i++){
-    console.log("Hello "+names[i]);
-}
+// for (var i=0; i<names.length; i++){
+//     console.log("Hello "+names[i]);
+// }
 
-names[100] = "sadia apu";
-for(i=0;i<names.length;i++){
-    console.log("hii "+names[i]);
-}
+// names[100] = "sadia apu";
+// for(i=0;i<names.length;i++){
+//     console.log("hii "+names[i]);
+// }
 
-var student = [
-    {name: "irfan"},
-    {name: "ehsan"},
-    "Imran"
-]
-console.log(student);
+// var student = [
+//     {name: "irfan"},
+//     {name: "ehsan"},
+//     "Imran"
+// ]
+// console.log(student);
 
 // 
 // 
@@ -428,3 +428,38 @@ console.log(student);
 // 
 // 
 // 
+
+// arrays part 2
+
+var names ={        //literal obj
+    name1: "irfan",
+    name2: "KARIM"
+}
+
+for(var prop in names){
+    console.log(prop+": "+names[prop]);
+}
+
+var student = [     //array
+    "imran",
+    "ehsan",
+    "irfan"
+];
+
+for (var name in student){
+    console.log("Name is "+student[name]);
+}
+
+student.class = 5; //property
+
+for (var name in student){
+    console.log("name is "+student[name]);
+}
+
+// 
+// 
+// 
+// End 
+// 
+// 
+//
