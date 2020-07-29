@@ -357,21 +357,74 @@
 
 // Objective Literal and this keyword
 
-var literalCircle =  { //new object
-    radius: 10,
+// var literalCircle =  { //new object
+//     radius: 10,
 
-    getArea: function () {
-        console.log(this);
-        var self = this;
-        var increaseradius = function () {
-          self.radius = 20;  
-        };
-        increaseradius();
+//     getArea: function () {
+//         console.log(this);
+//         var self = this;
+//         var increaseradius = function () {
+//           self.radius = 20;  
+//         };
+//         increaseradius();
 
-        console.log("change radius value "+this.radius);
-        return this.radius*2;
-    }
+//         console.log("change radius value "+this.radius);
+//         return this.radius*2;
+//     }
 
+// };
+
+// console.log(literalCircle.getArea());
+
+// 
+// 
+// 
+// End 
+// 
+// 
+// 
+
+// arrays part 1
+
+var array = new Array();
+array[0] = "irfan";
+array[1] = 26;
+array[2] = function (name){
+    console.log(name);
 };
+array[3] = {course: "HTML CSS JS"};
 
-console.log(literalCircle.getArea());
+console.log(array[0]);
+console.log(array[1]);
+array[2]("karim");
+array[2](array[0]);
+console.log(array[3].course);
+
+// Short Hand array creation
+
+var names = ["Muhammad","Irfanul","Karim"];
+console.log(names);
+
+for (var i=0; i<names.length; i++){
+    console.log("Hello "+names[i]);
+}
+
+names[100] = "sadia apu";
+for(i=0;i<names.length;i++){
+    console.log("hii "+names[i]);
+}
+
+var student = [
+    {name: "irfan"},
+    {name: "ehsan"},
+    "Imran"
+]
+console.log(student);
+
+// 
+// 
+// 
+// End 
+// 
+// 
+// 
