@@ -431,30 +431,30 @@
 
 // arrays part 2
 
-var names ={        //literal obj
-    name1: "irfan",
-    name2: "KARIM"
-}
+// var names ={        //literal obj
+//     name1: "irfan",
+//     name2: "KARIM"
+// }
 
-for(var prop in names){
-    console.log(prop+": "+names[prop]);
-}
+// for(var prop in names){
+//     console.log(prop+": "+names[prop]);
+// }
 
-var student = [     //array
-    "imran",
-    "ehsan",
-    "irfan"
-];
+// var student = [     //array
+//     "imran",
+//     "ehsan",
+//     "irfan"
+// ];
 
-for (var name in student){
-    console.log("Name is "+student[name]);
-}
+// for (var name in student){
+//     console.log("Name is "+student[name]);
+// }
 
-student.class = 5; //property
+// student.class = 5; //property
 
-for (var name in student){
-    console.log("name is "+student[name]);
-}
+// for (var name in student){
+//     console.log("name is "+student[name]);
+// }
 
 // 
 // 
@@ -463,3 +463,21 @@ for (var name in student){
 // 
 // 
 //
+
+// closures
+
+function makemultiplier(multiplier) {
+
+    console.log(multiplier);
+    
+    return(
+        function (x) {
+            return multiplier*x;
+        }
+    );    
+}
+
+var doubleall = new makemultiplier(2);
+console.log(doubleall(10));
+
+
