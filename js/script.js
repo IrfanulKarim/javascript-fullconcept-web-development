@@ -466,18 +466,31 @@
 
 // closures
 
-function makemultiplier(multiplier) {
+// function makemultiplier(multiplier) {
 
-    console.log(multiplier);
-    
-    return(
-        function (x) {
-            return multiplier*x;
-        }
-    );    
-}
+//     console.log(multiplier);
 
-var doubleall = new makemultiplier(2);
-console.log(doubleall(10));
+//     return(
+//         function (x) {
+//             return multiplier*x;
+//         }
+//     );    
+// }
+
+// var doubleall = new makemultiplier(2);
+// console.log(doubleall(10));
 
 
+
+// 
+// 
+// 
+// End 
+// 
+// 
+//
+
+
+// fake namespace
+johngreeter.sayhi();
+smithgreeter.sayhello();
