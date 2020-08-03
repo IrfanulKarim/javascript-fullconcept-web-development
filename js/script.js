@@ -492,5 +492,30 @@
 
 
 // fake namespace
+// johngreeter.sayhi();
+// smithgreeter.sayhello();
+
+// 
+// 
+// 
+// End 
+// 
+// 
+//
+
+// Immedietly Invoked Function Expressions
+// IIFE
+// (function (name){
+//     console.log("Assalamul Aykum "+name);
+// })("irfan");
+
 johngreeter.sayhi();
 smithgreeter.sayhello();
+
+// 
+// 
+// 
+// End 
+// 
+// 
+//

@@ -1,5 +1,13 @@
-var johngreeter = {};
-johngreeter.name = "john";
-johngreeter.sayhi = function (){
-    console.log("Hi"+johngreeter.name);
-}
+(function(window){
+    var johngreeter = {};
+    johngreeter.name = "john";
+    var greeting = "Hi"
+    johngreeter.sayhi = function (){
+        console.log(greeting+johngreeter.name);
+    }
+
+    window.johngreeter = johngreeter;
+
+})(window);
+
+
