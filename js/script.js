@@ -509,8 +509,8 @@
 //     console.log("Assalamul Aykum "+name);
 // })("irfan");
 
-johngreeter.sayhi();
-smithgreeter.sayhello();
+// johngreeter.sayhi();
+// smithgreeter.sayhello();
 
 // 
 // 
